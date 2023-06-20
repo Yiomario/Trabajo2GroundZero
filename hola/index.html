@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ground Zero</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Ground Zero</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Servicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link "href="#">Galería</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link " href="formulario.html">Cotización</a>
+                        </li>
+                    </ul>
+                    <a href="inicio.html"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes2/fondo2.jpg" class="d-block w-100" alt="" style=" height: 60%; width: auto; ">
+                    <div class="carousel-caption">
+                        <h1> GROUP ZERO</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes2/carrusel2.jpg" class="d-block w-100" alt="" style="max-height: auto;">
+                    <div class="carousel-caption">
+                        <h1>Expresa tú estilo con arte y originalidad</h1>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="carrusel-list" id="carrusel-list">
+
+                <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                        class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                        </path>
+                    </svg>
+                </button>
+
+
+                <div class="carrusel-track" id="track">
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen1.html"><img src="imagenes2/virgen.jfif" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen2.html"><img src="imagenes2/mapcuhe.jpg" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen3.html"><img src="imagenes2/collar.jfif" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen4.html"><img src="imagenes2/monalisa.webp" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen5.html"><img src="imagenes2/discogombre.jpeg" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen6.html"><img src="imagenes2/miguel angel final.webp"
+                                            alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen7.html"><img src="imagenes2/Reloj2.jpg" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carrusel">
+
+                        <div>
+
+                            <a href="/">
+                                <picture>
+                                    <a href="imagen8.html"><img src="imagenes2/cofre.jpg" alt="imagen"></a>
+                                </picture>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="java.js"></script>
+        <section class="services">
+            <div class="services-content container">
+                <h2>Estilos de Arte</h2>
+                <div class="services-group row">
+                    <div class="col-sm-6 col-md-3 services-1">
+                        <img src="imagenes2/logopintor.avif" alt="">
+                        <h3>Pintura</h3>
+                    </div>
+                    <div class="col-sm-6 col-md-3 services-1">
+                        <img src="imagenes2/logo-escultura2.png" alt="">
+                        <h3>Escultura</h3>
+                    </div>
+                    <div class="col-sm-6 col-md-3 services-1">
+                        <img src="imagenes2/logo-orfreia2..png" alt="">
+                        <h3>orfebrería</h3>
+                    </div>
+                    <div class="col-sm-6 col-md-3 services-1">
+                        <img src="imagenes2/logoTejidos.png" alt="">
+                        <h3>Tejidos</h3>
+                    </div>
+                </div>
+                <p>
+                    Nos enorgullece ofrecer una amplia variedad de obras de arte, cada una creada con pasión y
+                    dedicación por nuestros talentosos artistas. Ya sea que esté buscando una pieza impresionante para
+                    su hogar, oficina o para regalar a alguien especial, estamos seguros de que encontrará algo que se
+                    adapte a sus necesidades en nuestro catálogo.
+                </p>
+            </div>
+        </section>
+
+        <style>
+            /* Estilos para pantallas pequeñas (menores de 576px) */
+            @media (max-width: 575.98px) {
+                .services-group .services-1 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            /* Estilos para pantallas medianas (entre 576px y 767.98px) */
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                .services-group .services-1 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            /* Estilos para pantallas grandes (mayores de 768px) */
+            @media (min-width: 768px) {
+                .services-group .services-1 {
+                    margin-bottom: 40px;
+                }
+            }
+
+            /* Estilos para pantallas extra grandes (mayores de 1200px) */
+            @media (min-width: 1200px) {
+                .services-group .services-1 {
+                    margin-bottom: 60px;
+                }
+            }
+        </style>
+
+<section class="general">
+    <div class="general-1">
+        <h2>Cuadros</h2>
+        <p>
+            Comprar obras de arte es una forma de agregar belleza y carácter a su hogar u oficina,
+             y también es una inversión en una pieza de valor que puede apreciarse con el tiempo. 
+             Las obras de arte pueden ser una forma de expresión personal y también pueden reflejar la cultura y la historia de un lugar o época.
+        </p>
+    </div>
+        <div class="general-2">
+
+    </div>
+
+</section>
+
+<section class="general"> 
+
+    <div class="general-3"></div>
+
+    <div class="general-1">
+        <h2>Esculturas</h2>
+        <p>
+            
+            Comprar una escultura es una forma de agregar una pieza única de arte tridimensional a su hogar,
+             oficina o espacio público. Las esculturas tienen un valor estético y cultural, y pueden ser una inversión a largo plazo.
+              Comprar una escultura también es una forma de apoyar a nuestros artistas talentosos y fomentar la creatividad y la innovación en el mundo del arte.
+        </p>
+        
+        
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <div class="container-fluid marketing">
+
+            <div class="row">
+                <div class="col-xl-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <img src="imagenes2/cata2.jpg" width="140px" height="140px"
+                            style="border-radius: 100px; margin-top: 20px;">
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text>
+                    </svg>
+                    <h2>Catalina</h2>
+                    <p>Catalina Márquez es una escultora reconocida por su habilidad para crear obras de arte que
+                        transmiten emociones y sentimientos a través de la expresividad de sus formas. Márquez se siente
+                        más cómodo trabajando con materiales como la arcilla y el metal.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver detalles »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="imagenes2/portada-foto-perfil-redes-sociales-consejos.jpg" width="140px"
+                            height="140px" style="border-radius: 100px; margin-top: 20px;">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text>
+                    </svg>
+                    <h2>Nayared</h2>
+                    <p>Nayared Huenchullan es una artista visual que se destaca por su enfoque innovador y creativo en
+                        su trabajo.<br> Huenchullan es apasionada por explorar nuevas técnicas y materiales en sus obras
+                        de arte, y se siente más cómoda trabajando con acuarelas y técnicas mixtas.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver detalles »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="imagenes2/marco2.webp" width="140px" height="140px"
+                            style="border-radius: 100px; margin-top: 20px;">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text>
+                    </svg>
+                    <h2>Marco</h2>
+                    <p>Marco García es un tejedor talentoso que disfruta creando piezas únicas y originales a partir de
+                        hilos y telas. García se siente atraído por la textura y la sensación de los tejidos, y le gusta
+                        experimentar con diferentes técnicas para crear patrones y diseños interesantes.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver detalles »</a></p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <button class="btn btn-primary floating-btn" data-toggle="modal" data-target="#exampleModal">Abrir Modal</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido del modal...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="container-fluid" style="background-color: black;">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Encuéntranos</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Av.Siempre Viva
+                                    742</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lunes a
+                                    Viernes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">10:00 - 19:00</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Sobre</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas
+                                    Frecuentes.</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Políticas de
+                                    Privacidad.</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Contacto</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Correo Electrónico:
+                                groundzero@gmail.com</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Número Teléfono: 
+                                    223651767</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Suscríbete a nuestro catálogo de arte</h5>
+                            <p style="color:#fff ;">Sé el primero en recibir nuestro catálogo de las mejores obras
+                                de Chile.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Suscribirme</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p style="color: #fff;">© Ground Zero 2023 , Spa. Todos los derechos reservados.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#">
+                                <i class="bi bi-twitter"style="color: antiquewhite;"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-whatsapp"style="color: antiquewhite;"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" style="color: antiquewhite;"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
