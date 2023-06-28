@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE77444E-E544-E058-9FA9-143A751FD0DE" name="EMAIL">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>414277AE-AB42-23B9-3189-D89E0D8E0C35</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_email" id="C7C311E0-5D79-BB5A-FBEA-92CEFA8EB72F">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>CAF9C772-9EC9-8881-480D-90F1AB39BF72</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_rut_cli" id="9430E946-B213-0554-517E-B7B1088D876D">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>02584DC6-4622-2A53-4137-94892B1599AD</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48E96D99-6500-C810-F293-631E3A40926E" referredColumn="699CB408-85F6-C4C1-6EC8-66604B269FBE"/>
+</associations>
+</Column>
+<Column name="CLIENTE_id_genero" id="40D89313-7F86-D846-BAFC-5F0398C3F15D">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>9C492CFE-9B19-257E-145A-CB751B3E6098</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48E96D99-6500-C810-F293-631E3A40926E" referredColumn="54B518AE-18BC-9360-EAA2-2BA28AC743C3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F72064C7-6A8C-0B60-94B3-CE95049AC89B" name="EMAIL_PK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>0D3448B5-8A21-4E19-31DC-0DBD7B56B1C7</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7C311E0-5D79-BB5A-FBEA-92CEFA8EB72F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB1D08B4-41C6-2392-54F1-E1F7A283048E" name="EMAIL__IDX">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5E3367C0-9219-83D6-E6AB-697C01C9D6BC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9430E946-B213-0554-517E-B7B1088D876D"/>
+<colUsage columnID="40D89313-7F86-D846-BAFC-5F0398C3F15D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0328B85-E5AD-0C18-CDF1-B24E70E4590F" name="EMAIL_CLIENTE_FK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>5E3367C0-9219-83D6-E6AB-697C01C9D6BC</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9430E946-B213-0554-517E-B7B1088D876D"/>
+<colUsage columnID="40D89313-7F86-D846-BAFC-5F0398C3F15D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

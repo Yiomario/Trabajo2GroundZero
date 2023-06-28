@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ARTISTA_SOLICITUD" directorySegmentName="seg_0" id="626E9743-B61A-0016-75C1-D04715E9A291">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:16:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>emite</nameOnSource>
+<nameOnTarget>pertenece</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>26B96CDE-FA70-9634-7599-E5D0D227A034</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>014F6126-FC0E-D2F1-AF1C-17C2F64433F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
