@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA5475E1-2D67-E64F-801B-4EDEB60D3870" name="VENTA">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>DE57A9FF-3335-3E7E-D7D7-E3C4CE77010C</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_compra" id="0E35940D-E6D6-9EB7-F446-B097C3679705">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>558048E1-8279-20EA-60E7-52BB6307B07A</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="metodo_pago" id="6D6954B3-72B8-C821-0CFA-B39103CD2479">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>2F4969ED-F895-778F-39BE-AF84463FDEB2</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="55785CD5-3131-D3DB-F7B3-E442F2AC4AA9">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>53799194-1058-FD69-711F-4E55B9E0A73D</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_compra" id="BB8A4022-DCF0-9423-4A24-7E4C05E5CD06">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>73D71C8D-1691-9280-BED0-296D54414B55</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_rut_cli" id="3E25BC0D-8F64-5519-6FB0-2240136CBF4E">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>1CC6FA8B-B574-B352-3018-8E23AD01CCCF</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5A9DA1E-5086-9E2F-7119-10543C9E7767" referredColumn="699CB408-85F6-C4C1-6EC8-66604B269FBE"/>
+</associations>
+</Column>
+<Column name="CLIENTE_id_genero" id="DAB258B2-9141-A033-FA27-010F734267F5">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>9CF2DFF7-5A6B-3FBA-C49D-A3A19E11291B</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5A9DA1E-5086-9E2F-7119-10543C9E7767" referredColumn="54B518AE-18BC-9360-EAA2-2BA28AC743C3"/>
+</associations>
+</Column>
+<Column name="ARTISTA_rut_artista" id="B497ADA5-094A-98A5-FE14-E9B191940326">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>38F830A6-F24C-3F4E-F3D0-3ADAE3F3B564</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F53EE6AB-2188-93C6-62A2-8EC065EB26FD" referredColumn="176DB7BD-B550-5FCE-997D-6773D56589D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD9056FD-68D2-C2E8-5B83-40C41A444CE2" name="VENTA_PK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>7065008E-BCC8-93A2-C0AE-9C767E8EC2A8</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E35940D-E6D6-9EB7-F446-B097C3679705"/>
+<colUsage columnID="3E25BC0D-8F64-5519-6FB0-2240136CBF4E"/>
+<colUsage columnID="DAB258B2-9141-A033-FA27-010F734267F5"/>
+<colUsage columnID="B497ADA5-094A-98A5-FE14-E9B191940326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="309D7A2E-35F6-D0A9-B77E-29152AF36461" name="VENTA_ARTISTA_FK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>F607A3B6-ED38-4ADE-CC84-689BCAA41A77</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B497ADA5-094A-98A5-FE14-E9B191940326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="092CA0AD-0AAF-9E20-6134-EEA7811329BA" name="VENTA_CLIENTE_FK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>89DF211C-EDEC-DE33-8040-9BAAF769C734</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E25BC0D-8F64-5519-6FB0-2240136CBF4E"/>
+<colUsage columnID="DAB258B2-9141-A033-FA27-010F734267F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CD42FF6-3226-233E-8891-75B1BDB1E092" name="CLIENTE_DIRECCION">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTE_rut_cli" id="BAE5EBD2-DFD0-34FE-0E25-7478CD27ED17">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="766C00B4-29E1-AF6F-E868-D90669429314" referredColumn="699CB408-85F6-C4C1-6EC8-66604B269FBE"/>
+</associations>
+</Column>
+<Column name="CLIENTE_id_genero" id="F0C48A61-C2A3-B1DE-F5E6-A073CE31185A">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="766C00B4-29E1-AF6F-E868-D90669429314" referredColumn="54B518AE-18BC-9360-EAA2-2BA28AC743C3"/>
+</associations>
+</Column>
+<Column name="DIRECCION_id_direccion" id="20F83F56-0614-7667-D23C-2AD86D698289">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39CE5A7D-5308-39CF-286D-B810996837FB" referredColumn="BE08C9A0-0C49-D788-BC80-3B2072EB7B57"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B6A5363-0076-79D6-8AD2-A0CE2C3CC64A" name="CLIENTE_DIRECCION_PK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAE5EBD2-DFD0-34FE-0E25-7478CD27ED17"/>
+<colUsage columnID="F0C48A61-C2A3-B1DE-F5E6-A073CE31185A"/>
+<colUsage columnID="20F83F56-0614-7667-D23C-2AD86D698289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BF1C3F2-257F-18F0-8EB2-36D3FA2A55FE" name="CLIENTE_DIRECCION_CLIENTE_FK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>84A45750-3F8E-834F-B378-579E9F876E5E</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAE5EBD2-DFD0-34FE-0E25-7478CD27ED17"/>
+<colUsage columnID="F0C48A61-C2A3-B1DE-F5E6-A073CE31185A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7841A27F-E1D3-309B-7DD2-183CB22E704A" name="CLIENTE_DIRECCION_DIRECCION_FK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:49:28 UTC</createdTime>
+<generatorID>84A45750-3F8E-834F-B378-579E9F876E5E</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20F83F56-0614-7667-D23C-2AD86D698289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

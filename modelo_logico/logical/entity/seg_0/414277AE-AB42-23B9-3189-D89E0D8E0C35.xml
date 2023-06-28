@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="414277AE-AB42-23B9-3189-D89E0D8E0C35" name="EMAIL">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:38:18 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_email" id="CAF9C772-9EC9-8881-480D-90F1AB39BF72">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:27:13 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_cli" id="02584DC6-4622-2A53-4137-94892B1599AD">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:42:51 UTC</createdTime>
+<generatorID>5E3367C0-9219-83D6-E6AB-697C01C9D6BC</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<referedAttribute>D1D69282-AE28-1D4A-10B0-BA276E898F1E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_genero" id="9C492CFE-9B19-257E-145A-CB751B3E6098">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:42:51 UTC</createdTime>
+<generatorID>5E3367C0-9219-83D6-E6AB-697C01C9D6BC</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<referedAttribute>38E5B9C8-C3AF-A184-9D01-B336B9D392B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0D3448B5-8A21-4E19-31DC-0DBD7B56B1C7" name="EMAIL PK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:27:38 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A5D15CD7-35AE-24A6-37E0-33AC43DAB68B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CAF9C772-9EC9-8881-480D-90F1AB39BF72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
