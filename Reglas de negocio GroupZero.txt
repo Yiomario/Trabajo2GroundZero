@@ -1,0 +1,24 @@
+Reglas de Negocio Ground Zero
+Sobre el taller artístico, el café de recepción de clientes y la sala de exposición:
+•	Para la conservación, manipulación y exhibición de las obras de arte físico nos basamos en los documentos:
+o	“Cómo administrar un museo: Manual práctico. Unesco, 2006”.
+o	“La Manipulación de las colecciones en el almacén: Manual de protección del patrimonio cultural. Unesco, 2010.”
+•	No se aceptan trueques o regateos por parte de clientes.
+•	Las solicitudes especiales quedan a criterio de cada artista.
+•	Para visitas guiadas contactarse con el equipo de Ground Zero, cuyos canales de contacto están disponibles en la página web y redes sociales.
+
+Sobre la página web:
+•	Será utilizada con fines de divulgación artística, exponiendo el arte de sus socios, con la función de cotización para clientes, mas no de venta automatizada.
+•	Si un usuario está interesado en la compra de alguna de las obras expuestas en la página web, este debe cotizar desde la misma plataforma para luego contactarse directamente con el equipo de artistas de Ground Zero, cuyos canales de contacto están disponibles en la misma página web.
+•	Las solicitudes para la exposición se aprobarán por un administrador siempre que la información contenida en esta sea correcta, verídica y esté en regla.
+•	Las fotos de las obras que soliciten exponerse en la página web deberán ser de alta calidad y estar en formato .jpg o .png.
+•	Las fotos de las obras que soliciten exponerse en la página web deberán tener un mínimo de 400x150 pixeles y un máximo de 820x312 pixeles. Deben pesar menos de 100KB.
+•	Al registrarse, se generará un ID por cada usuario.
+•	Los colores de la página web serán morado, blanco y negro, acorde a los colores de Ground Zero.
+•	La página web presentará el logo de Ground Zero.
+
+Sobre la aplicación web:
+•	Se realizará a través de Django.
+•	La validación de datos se hará con Javascript.
+•	Tendrá control de versionamiento y trabajo cooperativo mediante GitHub.
+•	La base de datos creada a través de Django.
