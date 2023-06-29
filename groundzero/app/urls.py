@@ -2,7 +2,7 @@ from django.urls import path
 from .views import index, formulario, inicio, imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8 
 
 urlpatterns = [
-    path('', index, name="index"),
+    path('index/', index, name="index"),
     path('formulario/', formulario, name="formulario"),
     path('inicio/', inicio, name="inicio"),
     path('imagen1/', imagen1, name="imagen1"),
