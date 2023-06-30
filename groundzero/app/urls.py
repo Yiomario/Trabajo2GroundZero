@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, formulario, inicio, imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, agregar_producto 
+from .views import index, formulario, inicio, imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, agregar_producto, listar_productos, modificar_producto
 
 urlpatterns = [
     path('', index, name="index"),
@@ -14,5 +14,9 @@ urlpatterns = [
     path('imagen7/', imagen7, name="imagen7"),
     path('imagen8/', imagen8, name="imagen8"),
     path('agregar-producto/', agregar_producto, name="agregar_producto"),
+    path('listar-productos/', listar_productos, name="listar_productos"),
+    path('modificar-producto/<id>/', modificar_producto, name="modificar_producto"),
+    
+    
 ]
     
