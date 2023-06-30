@@ -37,7 +37,7 @@ opciones_consultas = [
 ]
 class Formulario(models.Model):
     rut              = models.CharField(max_length=10)
-    edad             = models.CharField(max_length=4)
+    edad             = models.IntegerField(max_length=3)
     nombre           = models.CharField(max_length=20)
     apellidos        = models.CharField(max_length=20)
     correo           = models.EmailField()
