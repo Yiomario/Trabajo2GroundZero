@@ -9,6 +9,12 @@ class ProductoAdmin(admin.ModelAdmin):
     list_filter = ["arte"]
     list_per_page = 5
 
+class FormularioAdmin(admin.ModelAdmin):
+    list_display = ["rut", "correo", "tipo_consulta"]
+    search_fields = ["rut"]
+    list_filter = ["tipo_consulta"]
+    list_per_page = 5
+
 admin.site.register(Arte)
 admin.site.register(Producto, ProductoAdmin)
-admin.site.register(Formulario)
+admin.site.register(Formulario, FormularioAdmin)
