@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#">Servicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link "href="#">Galería</a>
+                            <a class="nav-link" href="{% url 'galeria' %}">Galería</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link " href="{% url 'formulario' %}">Cotización</a>
@@ -61,23 +61,26 @@
     </header>
     
     <main>
-        {% load humanize %}
-        <h2>Productos</h2>
-        <div>
-            {% for p in productos %}
-            <div class="contenedor_producto">
-                {% if p.imagen %}
-                    <img src="{{ p.imagen.url }}" alt="imagen producto"/>
-                {% endif %}
-
-                <div class="detalle">
-                    <h4>{{ p.arte | capfirst }}</h4>
-                    <h2>{{ p.nombre | title }}</h2>
-                    <h3>${{ p.precio | intcomma }}</h3>
+        <div class="grid text-center">
+            {% load humanize %}
+            <h1>Productos</h1>
+            <div class="grid">
+                {% for p in productos %}
+                <div>
+                    <div class="g-col-6" style="--bs-columns: 4; --bs-gap: 5rem;">
+                    {% if p.imagen %}
+                        <img class="img-fluid" src="{{ p.imagen.url }}" alt="imagen producto"/>
+                    {% endif %}
+                    </div>
+                    <div class="detalle card">
+                        <h4>{{ p.arte | capfirst }}</h4>
+                        <h2>{{ p.nombre | title }}</h2>
+                        <h3>${{ p.precio | intcomma }}</h3>
+                    </div>
+                    
                 </div>
-                
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </main>
 
