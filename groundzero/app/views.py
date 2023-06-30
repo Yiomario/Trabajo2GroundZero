@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from .models import Producto
 from .forms import FormularioForm, ProductoForm, Producto
 from django.contrib import messages
 
@@ -93,4 +94,11 @@ def eliminar_producto(request, id):
     producto.delete()
     messages.success(request, "eliminado correctamente")
     return redirect(to="listar_productos")  
+
+def galeria(request):
+    productos = Producto.objects.all()
+    data = {
+        'productos': productos
+    }
+    return render(request, 'app/galeria.html', data)
 
