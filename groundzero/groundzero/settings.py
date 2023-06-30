@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'colorfield',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 X_FRAME_OPTION = 'SAMEORIGIN'
 
 MIDDLEWARE = [

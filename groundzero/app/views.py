@@ -1,5 +1,5 @@
 from django.shortcuts import render 
-from .forms import formularioForm
+from .forms import FormularioForm, ProductoForm
 
 # Create your views here.
 
@@ -8,11 +8,11 @@ def index(request):
 
 def formulario(request):
     data = { 
-        'form': formularioForm()
+        'form': FormularioForm()
     }
 
     if request.method == 'POST':  
-        formulario = formularioForm(data=request.POST)
+        formulario = FormularioForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
             data["mensaje"] = "formulario enviado"
@@ -48,6 +48,21 @@ def imagen7(request):
 
 def imagen8(request):
     return render(request, 'app/imagen8.html')
+
+def agregar_producto(request):
+
+    data ={
+        'form': ProductoForm()
+    }
+    if request.method == 'POST':
+        stock = ProductoForm(data=request.POST, files=request.FILES)
+        if stock.is_valid():
+            stock.save()
+            data["mensaje"]="guardado correctamente"
+        else:
+            data["form"] = stock
+
+    return render(request, 'app/producto/agregar.html',data)  
 
 
 

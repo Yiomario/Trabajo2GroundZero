@@ -1,9 +1,19 @@
 from django import forms
-from .models import formulario
+from .models import Formulario, Producto
 
 
-class formularioForm(forms.ModelForm):
+class FormularioForm(forms.ModelForm):
     
     class Meta:
-        model = formulario
+        model = Formulario
         fields = '__all__'
+
+class ProductoForm(forms.ModelForm):
+
+    class Meta:
+        model = Producto
+        fields = '__all__' 
+
+        widgets ={
+            "fecha_creacion":forms.SelectDateWidget()
+        }
