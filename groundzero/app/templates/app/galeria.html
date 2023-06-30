@@ -65,14 +65,14 @@
             {% load humanize %}
             <h1>Productos</h1>
             <div class="grid">
-                {% for p in productos %}
+                {% for p in entity %}
                 <div>
                     <div class="g-col-6" style="--bs-columns: 4; --bs-gap: 5rem;">
                     {% if p.imagen %}
-                        <img class="img-fluid" src="{{ p.imagen.url }}" alt="imagen producto"/>
+                        <img class="img-fluid w-100" src="{{ p.imagen.url }}" alt="imagen producto" style="max-width: 400px; height: 400px;"/>
                     {% endif %}
                     </div>
-                    <div class="detalle card">
+                    <div class="detalle">
                         <h4>{{ p.arte | capfirst }}</h4>
                         <h2>{{ p.nombre | title }}</h2>
                         <h3>${{ p.precio | intcomma }}</h3>
@@ -81,6 +81,9 @@
                 </div>
                 {% endfor %}
             </div>
+        </div>
+        <div>
+            {% include 'app/paginator.html' %}
         </div>
     </main>
 
