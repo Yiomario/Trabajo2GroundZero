@@ -121,3 +121,5 @@ def galeria(request):
     }
     return render(request, 'app/galeria.html', data)
 
+def servicio(request):
+    return render(request, 'app/servicio.html')
