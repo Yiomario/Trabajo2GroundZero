@@ -40,10 +40,38 @@
                         <li class="nav-item active">
                             <a class="nav-link " href="{% url 'formulario' %}">Cotización</a>
                         </li>
+                        {% if perms.app.add_producto  %}
+                        <li  class="nav-item active">
+                             <a class="nav-link" href="{% url 'agregar_producto' %}">Agregar Productos</a>
+                        </li>
+                        {% endif %}
+                        {% if perms.app.view_producto  %}
+                        <li  class="nav-item active">
+                            <a  class="nav-link" href="{% url 'listar_productos' %}">Lista De Productos</a>
+                        </li>
+                        {% endif %}
+
+                        {% if user.is_authenticated %}
+                        <li  class="nav-item active">
+                            <a  class="nav-link" href="#">@{{ user.username }}</a>
+                        </li>
+                        <li  class="nav-item active">
+                            <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
+                        </li >
+                        {% else %}
+                        
+                        <li  class="nav-item active">
+                            <a class="nav-link" href="{% url 'registrar' %}">registrate</a>
+                        </li>
+                        <li  class="nav-item active">
+                            <a class="nav-link" href="{% url 'login' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
+                        </li>
+                        {% endif %}
+                        
                        
                             {% if user.is_authenticated %}
                             <li>
-                                <a href="{% url 'logaut}">Cerrar sesión</a>
+                                <a href="{% url 'logout}">Cerrar sesión</a>
                             </li>
                             {% else %}
                             <li>
@@ -53,7 +81,6 @@
                             {% endif %}
                         
                     </ul>
-                    <a href="{% url 'inicio' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
                 </div>
             </div>
         </nav>

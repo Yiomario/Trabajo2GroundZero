@@ -53,7 +53,7 @@
 
                         {% if user.is_authenticated %}
                         <li  class="nav-item active">
-                            <a  class="nav-link" href="#">@{{ user.username }}</a>
+                            <a  class="nav-link" href="#">Bienvenido{{ user.username }}</a>
                         </li>
                         <li  class="nav-item active">
                             <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
@@ -61,27 +61,17 @@
                         {% else %}
                         
                         <li  class="nav-item active">
-                            <a class="nav-link" href="{% url 'registro' %}">registrate</a>
+                            <a class="nav-link" href="{% url 'registrar' %}">registrate</a>
                         </li>
                         <li  class="nav-item active">
-                            <a href="{% url 'login' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
+                            <a class="nav-link" href="{% url 'login' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
                         </li>
                         {% endif %}
                         
                        
-                            {% if user.is_authenticated %}
-                            <li>
-                                <a href="{% url 'logout}">Cerrar sesión</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="/login/">Iniciar Sesión</a>
-                            </li>
-
-                            {% endif %}
+        
                         
                     </ul>
-                    <a href="{% url 'inicio' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
                 </div>
             </div>
         </nav>

@@ -127,7 +127,7 @@ def galeria(request):
 def servicio(request):
     return render(request, 'app/servicio.html')
 
-def registro(request):
+def registrar(request):
     data = {
         'form' : CustomUserCreationForm()
 
@@ -141,4 +141,4 @@ def registro(request):
             messages.success(request, "te has registrado correctamente")
             return redirect(to="index")
         data['form'] = formulario
-    return render(request, 'registration/registro.html', data)
+    return render(request, 'registration/registrar.html', data)
