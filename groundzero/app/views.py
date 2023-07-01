@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from .models import Producto
 from .forms import FormularioForm, ProductoForm, Producto,CustomUserCreationForm
 from django.contrib import messages
+from django.core.paginator import Paginator
+from django.http import Http404
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
 
@@ -55,7 +58,6 @@ def imagen8(request):
 @permission_required('app.add_producto')
 def agregar_producto(request):
 
-
     data ={
         'form': ProductoForm()
     }
@@ -71,9 +73,17 @@ def agregar_producto(request):
 @permission_required('app.view_producto')
 def listar_productos(request):
     productos = Producto.objects.all()
+    page = request.GET.get('page', 1)
+
+    try:
+        paginator = Paginator(productos, 5)
+        productos = paginator.page(page)
+    except:
+        raise Http404
 
     data = {
-        'productos':productos
+        'entity':productos,
+        'paginator': paginator
     }
     return render(request, 'app/producto/listar.html', data)
 @permission_required('app.change_producto')
@@ -97,6 +107,25 @@ def eliminar_producto(request, id):
     producto.delete()
     messages.success(request, "eliminado correctamente")
     return redirect(to="listar_productos")  
+
+def galeria(request):
+    productos = Producto.objects.all()
+    page = request.GET.get('page', 1)
+
+    try:
+        paginator = Paginator(productos, 3)
+        productos = paginator.page(page)
+    except:
+        raise Http404
+
+    data = {
+        'entity':productos,
+        'paginator': paginator
+    }
+    return render(request, 'app/galeria.html', data)
+
+def servicio(request):
+    return render(request, 'app/servicio.html')
 
 def registro(request):
     data = {

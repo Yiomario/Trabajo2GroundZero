@@ -60,10 +60,10 @@
                             <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Servicio</a>
+                            <a class="nav-link" href="{% url 'servicio' %}">Servicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link " href="#">Galería</a>
+                            <a class="nav-link " href="{% url 'galeria' %}">Galería</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link " href="{% url 'formulario' %}">Cotización</a>
@@ -90,24 +90,26 @@
 
                 </tr>
 
-                {% for p in productos %}
+                {% for p in entity %}
                 <tr>
                     <td>{{p.codigo | title}}</td>
                     <td>{{p.nombre | title}}</td>
                     <td>{{p.precio | title}}</td>
                     <td>{{p.arte | title}}</td>
                     <td>{{p.stock | title}}</td>
-                    <td>
-                        {%if perms.app.delete_producto%}
+                    <td>{%if perms.app.delete_producto%}
                         <a href="{% url 'modificar_producto' p.id %}" class="btn btn-info btn-sm">modificar</a>
                         {% endif %}
                         {%if perms.app.change_producto%}
                         <a href="#" onclick="eliminarProducto({{p.id}})" class="btn btn-danger btn-sm">eliminar</a>
-                        {% endif %}
+                        {% endif %}                    
                     </td>
                 </tr>
                 {% endfor %}
             </table>
+            <div>
+                {% include 'app/paginator.html' %}
+            </div>
 
 
         </div>

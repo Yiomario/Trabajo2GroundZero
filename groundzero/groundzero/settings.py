@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'colorfield',
     'crispy_forms',
     'crispy_bootstrap4',
+    'django.contrib.humanize',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -115,11 +116,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es'
 
+USE_L10N = True
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+USE_THOUSAND_SEPARATOR = True
+
 
 
 # Static files (CSS, JavaScript, Images)

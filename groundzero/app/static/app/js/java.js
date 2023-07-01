@@ -1,4 +1,12 @@
+     function validarFormulario() {
+        var rut = document.getElementById("rut").value;
+        var apellidoP = document.getElementById("apellido").value;
+        var email = document.getElementById("email").value;
+        var nombre = document.getElementById("nombre").value;
+        var edad=document.getElementById("edad").value;
+    }
 
+    var svg = document.getElementById("svg");
 
     function App() {}
 
@@ -42,3 +50,7 @@
 
 
      
+     function validarinicio() {
+        var email = document.getElementById("email").value;
+        var contraseña=document.getElementById("contraseña").value;
+    }
