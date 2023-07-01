@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         {% block css %}
         <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
-        {% endblock  %} 
+        {% endblock  %}
     <title>Ground Zero</title>
 </head>
 
@@ -32,26 +32,14 @@
                             <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="{% url 'servicio' %}">Servicio</a>
+                            <a class="nav-link" href="#">Servicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link "href="{% url 'galeria' %}">Galería</a>
+                            <a class="nav-link "href="#">Galería</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link " href="{% url 'formulario' %}">Cotización</a>
                         </li>
-                       
-                            {% if user.is_authenticated %}
-                            <li>
-                                <a href="{% url 'logaut}">Cerrar sesión</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="/login/">Iniciar Sesión</a>
-                            </li>
-
-                            {% endif %}
-                        
                     </ul>
                     <a href="{% url 'inicio' %}"><i class="bi bi-person-circle ms-3 " style="font-size: 2rem;"></i> </a>
                 </div>
@@ -59,13 +47,6 @@
         </nav>
         
     </header>
-    
-    <div class="contenido">
-        <!-- recordar que esto va en todos que tengan un formulario -->
-       
-
-        
-    </div>
     <main>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -116,7 +97,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen1' %}"><img src="{% static 'app/imagenes2/virgen.jfif' %}" alt="imagen"></a>
+                                    <a href="imagen1.html"><img src="{% static 'app/imagenes2/virgen.jfif' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -129,7 +110,7 @@
                         <div>
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen2' %}"><img src="{% static 'app/imagenes2/mapcuhe.jpg' %}" alt="imagen"></a>
+                                    <a href="imagen2.html"><img src="{% static 'app/imagenes2/mapcuhe.jpg' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -143,7 +124,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen3' %}"><img src="{% static 'app/imagenes2/collar.jfif' %}" alt="imagen"></a>
+                                    <a href="imagen3.html"><img src="{% static 'app/imagenes2/collar.jfif' %}" alt="imagen"></a>
                                 </picture> 
                             </a>
 
@@ -157,7 +138,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen4' %}"><img src="{% static 'app/imagenes2/monalisa.webp' %}" alt="imagen"></a>
+                                    <a href="imagen4.html"><img src="{% static 'app/imagenes2/monalisa.webp' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -171,7 +152,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen5' %}"><img src="{% static 'app/imagenes2/discogombre.jpeg' %}" alt="imagen"></a>
+                                    <a href="imagen5.html"><img src="{% static 'app/imagenes2/discogombre.jpeg' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -185,7 +166,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen6' %}"><img src="{% static 'app/imagenes2/miguel angel final.webp' %}"
+                                    <a href="imagen6.html"><img src="{% static 'app/imagenes2/miguel angel final.webp' %}"
                                             alt="imagen"></a>
                                 </picture>
                             </a>
@@ -200,7 +181,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen7' %}"><img src="{% static 'app/imagenes2/Reloj2.jpg' %}" alt="imagen"></a>
+                                    <a href="imagen7.html"><img src="{% static 'app/imagenes2/Reloj2.jpg' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -214,7 +195,7 @@
 
                             <a href="/">
                                 <picture>
-                                    <a href="{% url 'imagen8' %}"><img src="{% static 'app/imagenes2/cofre.jpg' %}" alt="imagen"></a>
+                                    <a href="imagen8.html"><img src="{% static 'app/imagenes2/cofre.jpg' %}" alt="imagen"></a>
                                 </picture>
                             </a>
 
@@ -467,21 +448,6 @@
                     </ul>
                 </div>
             </footer>
-            <!-- recordar que el de abajo va en todos lados que tenga un formulario -->
-            {% if messages %}
-                {% for m in messages %}
-                <script>
-                    Swal.fire({
-                        "title": "Felicitaciones",
-                        "text":  "{{m}}",
-                        "icon":  "success"
- 
-                    })
-                </script>
-                   
-                {% endfor %}
-            {% endif %}
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                 crossorigin="anonymous"></script>

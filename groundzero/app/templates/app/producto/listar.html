@@ -1,27 +1,5 @@
 {% load static %}
 
-{% block js %}
-<script>
-    function eliminarProducto(id) {
-        Swal.fire({
-            
-                "title": 'Estas seguro?',
-                "text": "No podras cambiarlo!",
-                "icon": 'warning',
-                "showCancelButton": true,
-                "confirmButtonColor": '#3085d6',
-                "cancelButtonColor": '#d33',
-                "confirmButtonText": 'Si, borralo!'       
-        })      
-        .then(function(result) {
-            if(result.isConfirmed) {
-               window.location.href = "/eliminar-producto/"+id+"/"
-            }
-        })
-    }
-</script>
-{% endblock %}
-
 <!doctype html>
 <html lang="en">
 
@@ -32,13 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    {% block css %}
-    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
-    {% endblock  %}
+        {% block css %}
+        <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+        {% endblock  %}
 
 
-
-
+       
+        
 
     <title>Ground Zero</title>
 </head>
@@ -53,17 +31,17 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+         
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="{% url 'servicio' %}">Servicio</a>
+                            <a class="nav-link" href="#">Servicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link " href="{% url 'galeria' %}">Galería</a>
+                            <a class="nav-link "href="#">Galería</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link " href="{% url 'formulario' %}">Cotización</a>
@@ -73,45 +51,37 @@
                 </div>
             </div>
         </nav>
-
+        
     </header>
     <br><br>
     <div class="card">
         <div class="card-body">
             <h2>Listado de Stock</h2>
             <table class="table table-striped table-hover table-responisve-sm">
-                <tr>
-                    <th>Codigo</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Escultura</th>
-                    <th>Stock</th>
-                    <th>Opciones</th>
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Escultura</th>
+            <th>Stock</th>
+            
+        </tr>
 
-                </tr>
-
-                {% for p in entity %}
-                <tr>
-                    <td>{{p.codigo | title}}</td>
-                    <td>{{p.nombre | title}}</td>
-                    <td>{{p.precio | title}}</td>
-                    <td>{{p.arte | title}}</td>
-                    <td>{{p.stock | title}}</td>
-                    <td>
-                        <a href="{% url 'modificar_producto' p.id %}" class="btn btn-info btn-sm">modificar</a>
-                        <a href="#" onclick="eliminarProducto({{p.id}})" class="btn btn-danger btn-sm">eliminar</a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-            <div>
-                {% include 'app/paginator.html' %}
-            </div>
+        {% for p in productos %}
+        <tr>
+            <td>{{p.codigo | title}}</td>
+            <td>{{p.nombre | title}}</td>
+            <td>{{p.precio | title}}</td>
+            <td>{{p.arte | title}}</td>
+            <td>{{p.stock | title}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 
 
         </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br>
-
+    
 
 
 
@@ -144,8 +114,8 @@
                         <h5>Contacto</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Correo Electrónico:
-                                    groundzero@gmail.com</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Número Teléfono:
+                                groundzero@gmail.com</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Número Teléfono: 
                                     223651767</a></li>
                         </ul>
                     </div>
@@ -166,34 +136,17 @@
                     <p style="color: #fff;">© Ground Zero 2023 , Spa. Todos los derechos reservados.</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-dark" href="#">
-                                <i class="bi bi-twitter" style="color: antiquewhite;"></i></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-whatsapp"
-                                    style="color: antiquewhite;"></i></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"
-                                    style="color: antiquewhite;"></i></a></li>
+                                <i class="bi bi-twitter"style="color: antiquewhite;"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-whatsapp"style="color: antiquewhite;"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" style="color: antiquewhite;"></i></a></li>
                     </ul>
                 </div>
             </footer>
-
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                 crossorigin="anonymous"></script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            {% if messages %}
-            {% for m in messages %}
-            <script>
-                Swal.fire({
-                    "title": "Felicitaciones",
-                    "text": "{{ m }}",
-                    "icon": "success"
-                });
-            </script>
-            {% endfor %}
-            {% endif %}
-</body>
-
-</html>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
