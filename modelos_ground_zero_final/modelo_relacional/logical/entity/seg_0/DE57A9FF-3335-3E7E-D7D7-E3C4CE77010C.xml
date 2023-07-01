@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE57A9FF-3335-3E7E-D7D7-E3C4CE77010C" name="VENTA">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:14:28 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_compra" id="558048E1-8279-20EA-60E7-52BB6307B07A">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:55:12 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="metodo_pago" id="2F4969ED-F895-778F-39BE-AF84463FDEB2">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:31:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="53799194-1058-FD69-711F-4E55B9E0A73D">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:32:51 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_compra" id="73D71C8D-1691-9280-BED0-296D54414B55">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:55:27 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_cli" id="1CC6FA8B-B574-B352-3018-8E23AD01CCCF">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:37:34 UTC</createdTime>
+<generatorID>89DF211C-EDEC-DE33-8040-9BAAF769C734</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<referedAttribute>D1D69282-AE28-1D4A-10B0-BA276E898F1E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_artista" id="38F830A6-F24C-3F4E-F3D0-3ADAE3F3B564">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:38:17 UTC</createdTime>
+<generatorID>F607A3B6-ED38-4ADE-CC84-689BCAA41A77</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<referedAttribute>923548D3-C59E-6E16-410C-94A3B63CAD81</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7065008E-BCC8-93A2-C0AE-9C767E8EC2A8" name="VENTA PK">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 20:55:21 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>558048E1-8279-20EA-60E7-52BB6307B07A</attributeRef>
+<attributeRef>1CC6FA8B-B574-B352-3018-8E23AD01CCCF</attributeRef>
+<attributeRef>38F830A6-F24C-3F4E-F3D0-3ADAE3F3B564</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

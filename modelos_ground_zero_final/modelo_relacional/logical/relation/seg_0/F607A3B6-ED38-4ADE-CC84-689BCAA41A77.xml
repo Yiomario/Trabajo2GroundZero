@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ARTISTA_VENTA" directorySegmentName="seg_0" id="F607A3B6-ED38-4ADE-CC84-689BCAA41A77">
+<createdBy>Marco</createdBy>
+<createdTime>2023-06-28 21:38:17 UTC</createdTime>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<engineerTo>
+<item key="45D471CA-9FBD-F4CA-F52C-17614096764D" value="true"/>
+</engineerTo>
+<sourcePk>E8B4118C-18A5-7599-5258-E293E54833E6</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>realiza</nameOnSource>
+<nameOnTarget>pertenece</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26B96CDE-FA70-9634-7599-E5D0D227A034</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DE57A9FF-3335-3E7E-D7D7-E3C4CE77010C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

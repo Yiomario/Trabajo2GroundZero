@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A9EC596-108D-1E13-6AE3-F363AC28B360" name="ARTISTA_PRODUCTO">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARTISTA_rut_artista" id="8A2D5595-329C-B5CE-AFE4-BF8BDBF5D25B">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D931C48-5FFA-A502-6420-2BFDB02E5C15" referredColumn="C22D9DEE-FAFF-608C-B6D4-C8A5B56118B2"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_id_producto" id="9AE85F91-72D0-A158-6370-75CAA0E16524">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBBA8C69-5398-6075-3020-D8D431A51CE8" referredColumn="59D3B7D4-01A7-EBAF-9ACA-CD794ACEE655"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_id_categoria" id="DD8E6A59-287C-79D6-A30D-6FE33BAB4F60">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBBA8C69-5398-6075-3020-D8D431A51CE8" referredColumn="67AEF128-5A3C-D93B-D6B0-817EE5133E1F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD852743-9272-C965-75A3-BB633DFC3DFD" name="ARTISTA_PRODUCTO_PK">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2D5595-329C-B5CE-AFE4-BF8BDBF5D25B"/>
+<colUsage columnID="9AE85F91-72D0-A158-6370-75CAA0E16524"/>
+<colUsage columnID="DD8E6A59-287C-79D6-A30D-6FE33BAB4F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F485F90E-B990-3671-9C4C-48FB8E77FC10" name="ARTISTA_PRODUCTO_ARTISTA_FK">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<generatorID>E69F9F3C-5546-12C8-E598-8E8069D003C2</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2D5595-329C-B5CE-AFE4-BF8BDBF5D25B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D33E062F-65BE-A1B7-29BE-F3410DD2D144" name="ARTISTA_PRODUCTO_PRODUCTO_FK">
+<createdBy>Kta</createdBy>
+<createdTime>2023-06-30 23:33:50 UTC</createdTime>
+<generatorID>E69F9F3C-5546-12C8-E598-8E8069D003C2</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AE85F91-72D0-A158-6370-75CAA0E16524"/>
+<colUsage columnID="DD8E6A59-287C-79D6-A30D-6FE33BAB4F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
