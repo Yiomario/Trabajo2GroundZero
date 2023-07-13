@@ -69,7 +69,7 @@ def agregar_producto(request):
         else:
             data["form"] = stock
 
-    return render(request, 'app/producto/agregar.html',data)  
+    return render(request, 'app/agregar.html',data)  
 @permission_required('app.view_producto')
 def listar_productos(request):
     productos = Producto.objects.all()
@@ -85,7 +85,7 @@ def listar_productos(request):
         'entity':productos,
         'paginator': paginator
     }
-    return render(request, 'app/producto/listar.html', data)
+    return render(request, 'app/listar.html', data)
 @permission_required('app.change_producto')
 def modificar_producto(request, id):
     producto = get_object_or_404(Producto, id=id)  
@@ -100,7 +100,7 @@ def modificar_producto(request, id):
             return redirect(to=listar_productos)
         data['form'] = stock
 
-    return render(request, 'app/producto/modificar.html', data)  
+    return render(request, 'app/modificar.html', data)  
 @permission_required('app.delete_producto')
 def eliminar_producto(request, id):
     producto = get_object_or_404(Producto, id=id)  

@@ -1,0 +1,137 @@
+.carrusel h2 {
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color:#ffffff
+}
+.carrusel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.carrusel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out ;
+}
+.carrusel {
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+
+.carrusel a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+    
+}
+@media(min-width:768px) {
+    .carrusel{
+        width: 275px;
+    }
+    .carrusel a img{
+        width: 250px;
+    }
+}
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: #C5A3FF;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+.carrusel-arrow:focus {
+    outline: 0;
+}
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,0.7);
+}
+.carrusel-prev {
+    left: 0px;
+}
+.carrusel-next {
+    right:  0px;
+}
+h5{
+    color:#ffffff;
+}
+.footer p {
+    color: #ffffff;
+}
+
+
+.services {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(imagenes2/pintando.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /*aqui se hace para que la inmagen quede pegada y no se mueva*/
+        padding: 100px 0;
+}
+.services-content {
+    text-align: center;
+
+}
+.services-content h2 { 
+    font-size: 55px;
+    line-height: 70px;
+    color:#f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px; 
+}
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom:50px ;
+    padding: 0 100px;
+
+}
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.services-1 {
+    padding: 0 100px;
+}
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+.services-1 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+
